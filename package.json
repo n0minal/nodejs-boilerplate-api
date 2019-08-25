@@ -1,0 +1,50 @@
+{
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "build": "tsc",
+    "pretest": "cross-env NODE_ENV=test sequelize db:migrate",
+    "test": "cross-env NODE_ENV=test jest",
+    "posttest": "cross-env NODE_ENV=test sequelize db:migrate:undo:all",
+    "migrate": "sequelize db:migrate",
+    "seed": "sequelize db:seed",
+    "rollback": "sequelize db:migrate:undo:all",
+    "refresh": "sequelize db:migrate:undo:all && sequelize db:migrate"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.5",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.0",
+    "@types/factory-girl": "^5.0.1",
+    "@types/faker": "^4.1.5",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.0",
+    "@types/sequelize": "^4.28.3",
+    "@types/supertest": "^2.0.8",
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "nodemon": "^1.19.1",
+    "sequelize-typescript": "^0.6.11",
+    "sqlite3": "^4.0.9",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@sentry/node": "5.5.0",
+    "bcryptjs": "^2.4.3",
+    "camelcase-keys-recursive": "^0.8.3",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "jest": "^24.8.0",
+    "lodash": "^4.17.15",
+    "pg": "^7.11.0",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.9.4"
+  }
+}
