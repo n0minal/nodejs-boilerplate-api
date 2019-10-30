@@ -2606,11 +2606,7 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
 
-lodash@^4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-
-lodash@^4.17.15:
+lodash@^4.17.11, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
@@ -3623,9 +3619,9 @@ sequelize-typescript@^0.6.11:
     es6-shim "0.35.3"
     glob "7.1.2"
 
-sequelize@^5.9.4:
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.9.4.tgz#70af68085dee0ff1da220a719be549bd3e892600"
+sequelize@^5.15.1:
+  version "5.15.1"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.15.1.tgz#f130ded17e74395ae7f5e265277c99577e895afb"
   dependencies:
     bluebird "^3.5.0"
     cls-bluebird "^2.1.0"
