@@ -1,3 +1,5 @@
+# DEPRECATED
+Este repositório não está sendo mantido, não recomendo a utilização deste boilerplate em ambiente de produção!
 # Boilerplate API
 Este é um template a ser seguido para padronização de APIs de aplicações ou microserviços que utilizam a tecnologia NodeJS.
 
