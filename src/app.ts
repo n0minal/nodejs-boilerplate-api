@@ -27,20 +27,12 @@ class Application {
   startSentry() {  
     sentry.init({ dsn: process.env.SENTRY_DSN });
     console.log(`${colors.fgMagenta}[Sentry]: ${colors.reset} Starting sentry for DSN: ${process.env.SENTRY_DSN || 'N/A'}`)
-    for(let i = 0; i < 1000000; i++) {
-      for(let k = 0; i < 1000000; i++) {
-        for(let l = 0; i < 1000000; i++) {
-          for(let m = 0; i < 1000000; i++) {
-            console.log(`a`)
-          }
-        }
-      } 
-    }
   }
 
   globalMiddlewares() {
     this.express.use([ sentry.Handlers.errorHandler(), express.json(), cors(), camelize ]);
   }
+
 
   routes() {
     this.express.use(routes);
