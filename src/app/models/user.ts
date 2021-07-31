@@ -1,4 +1,4 @@
-import { Table, Model, Column, DataType, Length, IsEmail, AllowNull, Default, BeforeCreate, BelongsTo, ForeignKey, CreatedAt, UpdatedAt, DeletedAt, BeforeUpdate } from 'sequelize-typescript';
+import { Table, Model, Column, DataType, Length, AllowNull, CreatedAt, UpdatedAt, DeletedAt } from 'sequelize-typescript';
 import * as bcrypt from "bcryptjs";
 
 export interface UserInterface {
