@@ -27,6 +27,7 @@ class Application {
   startSentry() {  
     sentry.init({ dsn: process.env.SENTRY_DSN });
     console.log(`${colors.fgMagenta}[Sentry]: ${colors.reset} Starting sentry for DSN: ${process.env.SENTRY_DSN || 'N/A'}`)
+    throw new Error("foo bar")
   }
 
   globalMiddlewares() {
